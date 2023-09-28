@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;800&family=Playfair+Display:wght@700&family=Rubik&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  height: fit-content;
+  min-width: 100vw;
+  width: fit-content;
+  color: white;
+  background: url('./assets/leaf.jpg') no-repeat center top/cover;
+  backdrop-filter: blur(5px);
+  /* background-color: #183D3D; */
+  padding: 8vh 5vw;
+  font-family: 'Gothic A1', sans-serif;
+}
+.container {
+  width: 90vw;
+  height: 84vh;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  gap: 10px;
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5), 
+      0px 0px 20px rgba(0, 0, 0, 0.5),
+      inset -10px -10px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background: url('./assets/field.jpg') no-repeat center bottom/cover;
+}
+.left {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.left .top {
+  padding-left: 30px;
+}
+.left .top input {
+  outline: none;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.left .top input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.left .bottom div {
+  display: flex;
+  gap: 30px;
+  align-items:  last baseline;
+}
+.left .bottom h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+.left .bottom h1 sup {
+  font-size: 45px;
+}
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.right .top {
+  width: 80%;
+  flex: 1;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.right .top .rttop  {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+.right .top .rtbottom {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.right .top .rtbottom span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right .bottom {
+  width: 80%;
+  flex: 2;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right .bottom .rbtop {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+.right .bottom .rbbottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.rbbottom span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+}
+.rbbottom span img {
+  height: 40px;
+}
